@@ -1,0 +1,30 @@
+.spieler {
+    background-color: rgb(83, 83, 83);
+    border: 2px solid rgb(108, 108, 108);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    min-height: 200px;
+    height: auto 0;
+    margin:20px auto 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.simg1 {
+    margin-right: auto;
+}
+
+.simg1 img,
+.simg2 img {
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 190px;
+}
+
+
+.simg2 {
+    margin-left: auto;
+}

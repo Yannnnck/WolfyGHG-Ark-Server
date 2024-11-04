@@ -1,0 +1,89 @@
+.support-box {
+    background-color: rgb(83, 83, 83);
+    border: 2px solid rgb(108, 108, 108);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    max-width: 600px;
+    height: auto 0;
+    margin:20px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+fieldset {
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    margin-top: 5px;
+}
+
+.format{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name input,
+.email input,
+.kategorie select,
+.message textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.name input:hover,
+.email input:hover,
+.kategorie select:hover,
+.message textarea:hover{
+    background-color: rgb(227, 225, 222);
+    border: 2px solid darkgray;
+}
+
+/* Buttons */
+.submit-buttons {
+    display: flex;
+    justify-content: space-between; /* Platziert die Buttons nebeneinander */
+    margin-top: 20px; /* Abstand nach oben */
+}
+
+button {
+    background-color: #4CAF50; /* Grüner Hintergrund */
+    color: white; /* Weiße Schrift */
+    padding: 10px 20px; /* Innenabstand */
+    border: none; /* Kein Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeiger beim Hover */
+    font-size: 16px; /* Schriftgröße */
+}
+
+button:hover {
+    background-color: #45a049; /* Dunklerer Grünton beim Hover */
+}
+
+button[type="reset"] {
+    background-color: #f44336; /* Roter Hintergrund für den Zurücksetzen-Button */
+}
+
+button[type="reset"]:hover {
+    background-color: #e53935; /* Dunklerer Rotton beim Hover */
+}
+
+/* Handy */
+@media screen and (max-width: 630px) {
+    .format {
+        flex-direction: column;
+    }
+}
+

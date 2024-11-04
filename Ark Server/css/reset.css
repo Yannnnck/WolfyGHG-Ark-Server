@@ -1,0 +1,4 @@
+/* Legt die Schriftart für alle Elemente fest */
+body {
+    font-family: 'Arial', sans-serif; /* Hier kannst du die gewünschte Schriftart anpassen */
+}
