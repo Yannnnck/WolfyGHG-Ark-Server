@@ -5,12 +5,18 @@
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
+    max-width: 1260px;
     height: auto 0;
     margin:20px auto 0;
     width: 90%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-size: 32px;
+}
+
+h1, h2, h3, h4, h5, h6,
+b {
     color: white;
 }
 
@@ -52,3 +58,18 @@ img:hover {
 .Base-4 { grid-area: 2 / 1 / 3 / 2; }
 .Base-5 { grid-area: 2 / 2 / 3 / 3; }
 .Base-6 { grid-area: 2 / 3 / 3 / 4; }
+
+.Dino-Strong {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+    
+.Dino-1 { grid-area: 1 / 1 / 2 / 2; }
+.Dino-2 { grid-area: 1 / 2 / 2 / 3; }
+.Dino-3 { grid-area: 1 / 3 / 2 / 4; }
+.Dino-4 { grid-area: 2 / 1 / 3 / 2; }
+.Dino-5 { grid-area: 2 / 2 / 3 / 3; }
+.Dino-6 { grid-area: 2 / 3 / 3 / 4; }
