@@ -1,6 +1,6 @@
 .support-box {
-    background-color: rgb(83, 83, 83);
-    border: 2px solid rgb(108, 108, 108);
+    background-color: rgba(78, 79, 85, 0.598);
+    border: 2px solid rgb(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
@@ -28,6 +28,7 @@ textarea {
 
 .name input,
 .email input,
+.phone input,
 .kategorie select,
 .message textarea {
     width: 100%;
@@ -45,6 +46,7 @@ textarea {
 
 .name input:hover,
 .email input:hover,
+.phone input:hover,
 .kategorie select:hover,
 .message textarea:hover{
     background-color: rgb(227, 225, 222);

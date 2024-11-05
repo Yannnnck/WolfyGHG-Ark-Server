@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="img/web img.jpeg" alt="web icon">
+                <img src="img/web img.jpg" alt="web icon">
             </div>
             <ul>
                 <li> <a href="index.html"> Main </a> </li>
@@ -39,10 +39,15 @@
                 
                 <div class="format">
                     <div class="email">
-                        <label for="email"> E-Mail </label>
+                        <label for="email">E-Mail</label>
                         <input type="email" name="email" id="email" required>
                     </div>
+                    <div class="phone">
+                        <label for="phone">Handy Nummer</label>
+                        <input type="tel" name="phone" id="phone" pattern="^\+?[0-9\s-]{10,15}$" required>
+                    </div>
                 </div>
+                
 
                 <div class="format">
                     <div class="kategorie">

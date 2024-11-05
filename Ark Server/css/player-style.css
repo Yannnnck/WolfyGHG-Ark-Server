@@ -1,6 +1,6 @@
-.spieler {
-    background-color: rgb(83, 83, 83);
-    border: 2px solid rgb(108, 108, 108);
+.player {
+    background-color: rgba(78, 79, 85, 0.598);
+    border: 2px solid rgb(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
@@ -9,22 +9,33 @@
     margin:20px auto 0;
     width: 90%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.simg1 {
-    margin-right: auto;
-}
-
-.simg1 img,
-.simg2 img {
+.img-left img,
+.img-right img {
     border-radius: 15px;
     border: 2px solid black;
     width: 190px;
 }
 
+.img-left {
+    margin-right: 20px;
+}
 
-.simg2 {
-    margin-left: auto;
+.img-right {
+    margin-right: 20px;
+}
+
+.img-text1, .img-text2 {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .player {
+        flex-direction: column;
+    }
 }

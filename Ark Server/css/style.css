@@ -1,7 +1,21 @@
-.navbar {
-    background-color: #333;
+body {
+    background: url('../img/background.jpg'); /* Pfad zu deinem Bild */
+    background-size: cover; /* Bild skaliert sich, um den ganzen Bereich auszufüllen */
+    background-position: center; /* Bild wird zentriert */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild wiederholt wird */
+    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
+    margin: 0; /* Entfernt Standardabstand für den body */
+    font-family: Arial, sans-serif; /* Beispiel-Schriftart für die gesamte Seite */
+}
+
+.navbar,
+.navbar-bottom {
+    background-color: rgba(78, 79, 85, 0.79);
+    border: 2px solid rgb(108, 108, 108, 0.8);
     overflow: hidden;
     display: flex;
+    margin:10px auto 0;
+    width: 96%;
     justify-content: center;
     border-radius: 5px;
     box-shadow: 0 0 10px;
@@ -11,14 +25,16 @@
 .logo {
 margin-right: auto;
 }
+
 .logo img {
+    border: 2px solid rgba(108, 108, 108, 0.8);
     width: 40px;
-    border: 2px solid rgb(63, 63, 63);
     border-radius: 10px;
     padding: 0px;
 }
 
-.navbar ul {
+.navbar ul,
+.navbar-bottom ul {
     list-style-type: none;
     align-items: center;
     margin: 0;
@@ -26,34 +42,44 @@ margin-right: auto;
     display: flex;
 }
 
-.navbar li {
+.navbar li,
+.navbar-bottom li {
     margin: 0 30px;
 }
 
-.navbar a {
+.navbar a,
+.navbar-bottom a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar-bottom a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: black;
 }
 
+footer {
+ /* wie mach ich es nach unten??? */
+}
+
 @media screen and (max-width: 400px) {
-    .navbar {
+    .navbar,
+    .navbar-bottom {
         flex-direction: column; /* Elemente untereinander anordnen */
         align-items: flex-start; /* Option, um die Elemente links auszurichten */
     }
 
-    .navbar ul {
+    .navbar ul,
+    .navbar-bottom ul {
         flex-direction: column; /* Auch die Liste vertikal anordnen */
         width: 100%; /* Breite anpassen, damit sie den ganzen Bildschirm nutzt */
     }
 
-    .navbar li {
+    .navbar li,
+    .navbar-bottom li {
         margin: 10px 0; /* Vertikalen Abstand zwischen den Listenelementen hinzufügen */
     }
 }
@@ -71,6 +97,24 @@ margin-right: auto;
     }
 
     .navbar li {
+        flex: 1 1 45%; /* Passt die Breite der Listenelemente an, damit zwei in eine Reihe passen */
+        margin: 5px 0; /* Abstand zwischen den Elementen */
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 850px) {
+    .navbar-bottom {
+        flex-wrap: wrap; /* Elemente umbrechen, wenn sie nicht in eine Zeile passen */
+        justify-content: space-between; /* Abstand zwischen den Elementen */
+    }
+
+    .navbar-bottom ul{
+        display: flex;
+        flex-wrap: wrap; /* Zeilenumbruch für die Listenelemente */
+        width: 100%; /* Volle Breite für bessere Platzierung */
+    }
+
+    .navbar-bottom li {
         flex: 1 1 45%; /* Passt die Breite der Listenelemente an, damit zwei in eine Reihe passen */
         margin: 5px 0; /* Abstand zwischen den Elementen */
     }
