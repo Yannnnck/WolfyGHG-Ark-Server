@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const vorname = document.getElementById('vname').value;
             const nachname = document.getElementById('nname').value;
             const email = document.getElementById('email').value;
+            const tel = document.getElementById('phone').value;
             const kategorie = document.getElementById('kategorie').value;
             const nachricht = document.getElementById('nachricht').value;
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(`Vorname: ${vorname}`);
             console.log(`Nachname: ${nachname}`);
             console.log(`E-Mail: ${email}`);
+            console.log(`Tel: ${tel}`);
             console.log(`Kategorie: ${kategorie}`);
             console.log(`Nachricht: ${nachricht}`);
 
