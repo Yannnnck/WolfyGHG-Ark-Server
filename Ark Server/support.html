@@ -23,64 +23,77 @@
             </ul>
         </nav>
     </header>
-    <form action="">
-        <section class="support-box">
-            <fieldset>
-                <div class="format">
-                    <div class="name">
-                        <label for="vname"> Vorname: </label>
-                        <input type="text" name="vname" id="vname" required>
+    <main>
+        <form action="">
+            <section class="support-box">
+                <fieldset>
+                    <div class="format">
+                        <div class="name">
+                            <label for="vname"> Vorname: </label>
+                            <input type="text" name="vname" id="vname" required>
+                        </div>
+                        <div class="name">
+                            <label for="nname"> Nachname: </label>
+                            <input type="text" name="nname" id="nname" required>
+                        </div>
                     </div>
-                    <div class="name">
-                        <label for="nname"> Nachname: </label>
-                        <input type="text" name="nname" id="nname" required>
+                    
+                    <div class="format">
+                        <div class="email">
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Handy Nummer</label>
+                            <input type="tel" name="phone" id="phone" pattern="^\+?[0-9\s-]{10,15}$" required>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="format">
-                    <div class="email">
-                        <label for="email">E-Mail</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="phone">
-                        <label for="phone">Handy Nummer</label>
-                        <input type="tel" name="phone" id="phone" pattern="^\+?[0-9\s-]{10,15}$" required>
-                    </div>
-                </div>
-                
+                    
 
-                <div class="format">
-                    <div class="kategorie">
-                        <label for="kategorie">Kategorie:</label>
-                        <select name="kategorie" id="kategorie" required>
-                            <option value="">Bitte wählen</option>
-                            <option value="technisch">Technisches Problem</option>
-                            <option value="verbindungsprobleme">Verbindungsprobleme</option>
-                            <option value="melden">Spieler Melden</option>
-                            <option value="kontoproblem">Kontoproblem</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="sonstiges">Sonstiges</option>
-                        </select>
+                    <div class="format">
+                        <div class="kategorie">
+                            <label for="kategorie">Kategorie:</label>
+                            <select name="kategorie" id="kategorie" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="technisch">Technisches Problem</option>
+                                <option value="verbindungsprobleme">Verbindungsprobleme</option>
+                                <option value="melden">Spieler Melden</option>
+                                <option value="kontoproblem">Kontoproblem</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="message">
-                    <label for="nachricht">Nachricht:</label>
-                    <textarea type="textarea" name="nachricht" id="nachricht" placeholder="Ihre Nachricht hier..." required></textarea>
-                </div>
+                    <div class="message">
+                        <label for="nachricht">Nachricht:</label>
+                        <textarea type="textarea" name="nachricht" id="nachricht" placeholder="Ihre Nachricht hier..." required></textarea>
+                    </div>
 
-                <div class="submit-buttons">
-                    <button type="submit">Absenden</button>
-                    <button type="reset">Zurücksetzen</button>
-                </div>
+                    <div class="submit-buttons">
+                        <button type="submit">Absenden</button>
+                        <button type="reset">Zurücksetzen</button>
+                    </div>
 
-                <div class="ark support">
-                    <br><b>Mehr Hilfe unter:</b><br>
-                    <a href="https://support.survivetheark.com/hc/en-us" target="_blank">support.survivetheark.com</a>
-                </div>
-            </fieldset>
-        </section>
-    </form>
-    <script src="js/support.js"></script>
+                    <div class="ark support">
+                        <br><b>Mehr Hilfe unter:</b><br>
+                        <a href="https://support.survivetheark.com/hc/en-us" target="_blank">support.survivetheark.com</a>
+                    </div>
+                </fieldset>
+            </section>
+        </form>
+        <script src="js/support.js"></script>
+    </main>
+    <footer>
+        <nav class="navbar-bottom">
+            <ul>
+                <li> <a href="footer/impressum.html"> Impressum </a> </li>
+                <li> <a href="footer/datenschutz.html"> Datenschutz </a> </li>
+                <li> <a href="footer/nutzungsbedingungen.html"> Nutzungsbedingungen </a> </li>
+                <li> <a href="footer/kontakt.html"> Kontakt </a> </li>
+                <li> <p>&copy; 2024 Yannick.</p> </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

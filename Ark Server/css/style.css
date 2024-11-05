@@ -6,6 +6,23 @@ body {
     background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
     margin: 0; /* Entfernt Standardabstand für den body */
     font-family: Arial, sans-serif; /* Beispiel-Schriftart für die gesamte Seite */
+
+    /* Body auf volle Höhe setzen und Flexbox verwenden */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Hauptinhalt dehnt sich aus, um den freien Platz zu füllen */
+header, main {
+    flex: 1;
+}
+
+/* Footer bleibt am unteren Rand */
+footer {
+    margin:20px;
+    align-self: stretch; /* Passt die Breite des Footers an */
 }
 
 .navbar,
@@ -61,10 +78,6 @@ margin-right: auto;
     color: black;
 }
 
-footer {
- /* wie mach ich es nach unten??? */
-}
-
 @media screen and (max-width: 400px) {
     .navbar,
     .navbar-bottom {
@@ -102,7 +115,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 850px) {
+@media screen and (min-width: 401px) and (max-width: 890px) {
     .navbar-bottom {
         flex-wrap: wrap; /* Elemente umbrechen, wenn sie nicht in eine Zeile passen */
         justify-content: space-between; /* Abstand zwischen den Elementen */
