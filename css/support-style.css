@@ -25,6 +25,10 @@ label, b {
     color: white;
 }
 
+a {
+    color: rgb(20, 20, 134);
+}
+
 .format{
     display: flex;
     justify-content: space-between;

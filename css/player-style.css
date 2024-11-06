@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+a {
+    color: rgb(20, 20, 134);
+}
+
 .img-left img,
 .img-right img {
     border-radius: 15px;

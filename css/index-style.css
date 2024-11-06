@@ -15,6 +15,10 @@ h1, h2, h3, h4, b{
     color: white;
 }
 
+a {
+    color: rgb(20, 20, 134);
+}
+
 .banner img {
     width: 100%;
     max-width: 1250px;

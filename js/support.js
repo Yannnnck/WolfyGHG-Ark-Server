@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
-
+    
     if (form) {
         form.addEventListener('submit', (event) => {
             event.preventDefault(); // Verhindert das Abschicken des Formulars
@@ -26,5 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     } else {
         console.error('Formular nicht gefunden');
-    }
+    } 
 });
