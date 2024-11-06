@@ -1,3 +1,45 @@
+/* Vollbild-Loader-Container */
+.loader {
+    position: fixed; /* Positioniert den Loader über den gesamten Bildschirm */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Volle Breite des Ansichtsfensters */
+    height: 100vh; /* Volle Höhe des Ansichtsfensters */
+    display: flex;
+    align-items: center; /* Zentriert den Loader vertikal */
+    justify-content: center; /* Zentriert den Loader horizontal */
+    background: #333333; /* Hintergrundfarbe des Loaders */
+    transition: opacity 0.75s, visibility 0.75s; /* Übergang für das Ausblenden des Loaders */
+}
+
+/* Klasse für das Ausblenden des Loaders */
+.loader--hidden {
+    opacity: 0; /* Setzt die Sichtbarkeit auf transparent */
+    visibility: hidden; /* Entfernt den Loader aus dem Sichtbereich */
+}
+
+/* Stil für das animierte Lade-Element */
+.loader::after {
+    content: ""; /* Platzhalter-Inhalt für das Pseudo-Element */
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd; /* Breiter Rand um das Element */
+    border-top-color: #009578; /* Setzt die obere Randfarbe für die Dreh-Animation */
+    border-radius: 50%; /* Macht das Element rund */
+    animation: loading 0.75s ease infinite; /* Endlose Rotation */
+}
+
+/* Keyframe-Animation für das Drehen des Loaders */
+@keyframes loading {
+    from {
+        transform: rotate(0turn); /* Startet bei 0 Drehung */
+    }
+    to {
+        transform: rotate(1turn); /* Dreht sich vollständig um 360 Grad */
+    }
+}
+
+
 /* Hintergrundbild und grundlegendes Layout für die gesamte Seite */
 body {
     background: url('../img/background.jpg'); /* Pfad zum Hintergrundbild */
