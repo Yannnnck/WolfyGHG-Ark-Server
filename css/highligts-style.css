@@ -104,6 +104,12 @@ img:hover {
 .Boss-5 { grid-area: 2 / 2 / 3 / 3; }
 .Boss-6 { grid-area: 2 / 3 / 3 / 4; }
 
+.video-trailer video {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(72, 70, 86, 0.8);
+}
+
 @media screen and (max-width: 800px) {
     .Location {
         display: grid;
