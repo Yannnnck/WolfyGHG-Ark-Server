@@ -106,7 +106,8 @@ margin-right: auto;
     .navbar ul {
         display: flex;
         flex-wrap: wrap; /* Zeilenumbruch für die Listenelemente */
-        width: 100%; /* Volle Breite für bessere Platzierung */
+        justify-content: center;
+        width: 80%; /* Volle Breite für bessere Platzierung */
     }
 
     .navbar li {

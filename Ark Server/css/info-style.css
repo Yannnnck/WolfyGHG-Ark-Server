@@ -5,8 +5,19 @@
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
-    max-width: 1260px;
+    max-width: 1060px;
     height: auto 0;
     margin:20px auto 0;
     width: 90%;
+}
+
+h2, h3, h4, b{
+    color: white;
+}
+
+.server-info img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid rgba(72, 70, 86, 0.8);
 }

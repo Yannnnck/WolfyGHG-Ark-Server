@@ -21,6 +21,10 @@ textarea {
     margin-top: 5px;
 }
 
+b {
+    color: white;
+}
+
 .format{
     display: flex;
     justify-content: space-between;
