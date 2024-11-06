@@ -1,16 +1,18 @@
+/* Hauptbereich für hervorgehobene Inhalte */
 .highlights-background {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
     max-width: 1260px;
-    height: auto 0;
-    margin:20px auto 0;
+    height: auto;
+    margin: 20px auto 0;
     width: 90%;
 }
 
+/* Überschriften */
 h1 {
     font-size: 32px;
 }
@@ -20,15 +22,19 @@ b {
     color: white;
 }
 
+/* Bildstil */
 img {
     width: 350px;
     border-radius: 10px;
     border: 2px solid rgba(72, 70, 86, 0.8);
 }
+
+/* Bildhover-Effekt */
 img:hover {
     scale: 1.1;
 }
 
+/* Layout für Location-Klasse */
 .Location {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,7 +42,7 @@ img:hover {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-    
+
 .Location-1 { grid-area: 1 / 1 / 2 / 2; }
 .Location-2 { grid-area: 1 / 2 / 2 / 3; }
 .Location-3 { grid-area: 1 / 3 / 2 / 4; }
@@ -44,6 +50,7 @@ img:hover {
 .Location-5 { grid-area: 2 / 2 / 3 / 3; }
 .Location-6 { grid-area: 2 / 3 / 3 / 4; }
 
+/* Layout für Base-Klasse */
 .Base {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +58,7 @@ img:hover {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-    
+
 .Base-1 { grid-area: 1 / 1 / 2 / 2; }
 .Base-2 { grid-area: 1 / 2 / 2 / 3; }
 .Base-3 { grid-area: 1 / 3 / 2 / 4; }
@@ -59,6 +66,7 @@ img:hover {
 .Base-5 { grid-area: 2 / 2 / 3 / 3; }
 .Base-6 { grid-area: 2 / 3 / 3 / 4; }
 
+/* Layout für Dino-Strong-Klasse */
 .Dino-Strong {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -66,7 +74,7 @@ img:hover {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-    
+
 .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
 .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
 .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
@@ -74,6 +82,7 @@ img:hover {
 .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
 .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
 
+/* Layout für Dino-Sweet-Klasse */
 .Dino-Sweet {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -81,7 +90,7 @@ img:hover {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-    
+
 .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
 .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
 .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
@@ -89,6 +98,7 @@ img:hover {
 .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
 .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
 
+/* Layout für Boss-Klasse */
 .Boss {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -96,7 +106,7 @@ img:hover {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-    
+
 .Boss-1 { grid-area: 1 / 1 / 2 / 2; }
 .Boss-2 { grid-area: 1 / 2 / 2 / 3; }
 .Boss-3 { grid-area: 1 / 3 / 2 / 4; }
@@ -104,10 +114,11 @@ img:hover {
 .Boss-5 { grid-area: 2 / 2 / 3 / 3; }
 .Boss-6 { grid-area: 2 / 3 / 3 / 4; }
 
+/* Video-Trailer Stil */
 .video-trailer {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Verhältnis 16:9, also Höhe durch Breite (9 / 16 = 0.5625) */
+    padding-bottom: 56.25%; /* Verhältnis 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -120,159 +131,37 @@ img:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: inherit; /* Erbt den border-radius vom Container */
+    border-radius: inherit;
 }
 
+/* Responsive Design für Bildschirme kleiner als 800px */
 @media screen and (max-width: 800px) {
-    .Location {
+    /* Einspaltiges Layout für kleinere Bildschirme */
+    .Location, .Base, .Dino-Strong, .Dino-Sweet, .Boss {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 20px;
     }
-        
-    .Location-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Location-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Location-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Location-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Location-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Location-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Base {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
+
+    img {
+        width: 100%;
     }
-        
-    .Base-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Base-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Base-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Base-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Base-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Base-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Dino-Strong {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
+
+    img:hover {
+        scale: 1.05;
     }
-        
-    .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Dino-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Dino-Sweet {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Dino-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Boss {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Boss-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Boss-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Boss-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Boss-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Boss-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Boss-6 { grid-area: 2 / 3 / 3 / 4; }
 }
 
+/* Responsive Design für Bildschirme zwischen 801px und 1150px */
 @media screen and (min-width: 801px) and (max-width: 1150px) {
-    .Location {
+    /* Zweispaltiges Layout */
+    .Location, .Base, .Dino-Strong, .Dino-Sweet, .Boss {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 20px;
     }
-        
-    .Location-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Location-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Location-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Location-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Location-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Location-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Base {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Base-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Base-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Base-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Base-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Base-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Base-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Dino-Strong {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Dino-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Dino-Sweet {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Dino-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Dino-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Dino-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Dino-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Dino-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Dino-6 { grid-area: 2 / 3 / 3 / 4; }
-    
-    .Boss {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-    }
-        
-    .Boss-1 { grid-area: 1 / 1 / 2 / 2; }
-    .Boss-2 { grid-area: 1 / 2 / 2 / 3; }
-    .Boss-3 { grid-area: 1 / 3 / 2 / 4; }
-    .Boss-4 { grid-area: 2 / 1 / 3 / 2; }
-    .Boss-5 { grid-area: 2 / 2 / 3 / 3; }
-    .Boss-6 { grid-area: 2 / 3 / 3 / 4; }
 }

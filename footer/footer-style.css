@@ -1,16 +1,18 @@
+/* Hintergrundstil für den Footer-Bereich */
 .footer-background {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px; /* Schatteneffekt */
     min-height: 200px;
     max-width: 1260px;
-    height: auto 0;
-    margin:20px auto 0;
-    width: 70%;
+    height: auto;
+    margin: 20px auto 0; /* Zentriert den Footer-Bereich und fügt oberen Abstand hinzu */
+    width: 70%; /* Setzt die Breite auf 70% der verfügbaren Breite */
 }
 
-h2, h3, b{
+/* Textfarbe für Überschriften und fettgedruckten Text */
+h2, h3, b {
     color: white;
 }

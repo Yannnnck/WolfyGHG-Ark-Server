@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ark server WolfyGHG</title>
+    
+    <!-- Favicon -->
     <link rel="icon" href="img/web img.jpg" type="image/x-icon">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/support-style.css">
 </head>
 <body>
+    <!-- Header-Bereich mit Navigation -->
     <header>
         <nav class="navbar">
+            <!-- Logo-Bereich -->
             <div class="logo">
                 <img src="img/web img.jpg" alt="web icon">
             </div>
+            
+            <!-- Navigations-Links -->
             <ul>
-                <li> <a href="index.html"> Main </a> </li>
-                <li> <a href="info.html"> Info </a> </li>
-                <li> <a href="highligts.html"> Highlights </a> </li>
-                <li> <a href="player.html"> Player </a> </li>
-                <li> <a href="support.html"> Support </a> </li>
+                <li><a href="index.html"> Main </a></li>
+                <li><a href="info.html"> Info </a></li>
+                <li><a href="highligts.html"> Highlights </a></li>
+                <li><a href="player.html"> Player </a></li>
+                <li><a href="support.html"> Support </a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Hauptinhalt der Seite -->
     <main>
+        <!-- Support-Formular -->
         <form action="">
             <section class="support-box">
                 <fieldset>
+                    <!-- Name Eingabefelder -->
                     <div class="format">
                         <div class="name">
                             <label for="vname"> Vorname: </label>
@@ -39,6 +51,7 @@
                         </div>
                     </div>
                     
+                    <!-- E-Mail und Telefonnummer Eingabefelder -->
                     <div class="format">
                         <div class="email">
                             <label for="email">E-Mail</label>
@@ -49,8 +62,8 @@
                             <input type="tel" name="phone" id="phone" pattern="^\+?[0-9\s-]{10,15}$" required>
                         </div>
                     </div>
-                    
 
+                    <!-- Kategorie Dropdown-Menü -->
                     <div class="format">
                         <div class="kategorie">
                             <label for="kategorie">Kategorie:</label>
@@ -66,16 +79,19 @@
                         </div>
                     </div>
 
+                    <!-- Nachrichteneingabe -->
                     <div class="message">
                         <label for="nachricht">Nachricht:</label>
-                        <textarea type="textarea" name="nachricht" id="nachricht" placeholder="Ihre Nachricht hier..." required></textarea>
+                        <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht hier..." required></textarea>
                     </div>
 
+                    <!-- Absenden und Zurücksetzen-Buttons -->
                     <div class="submit-buttons">
                         <button type="submit">Absenden</button>
                         <button type="reset">Zurücksetzen</button>
                     </div>
 
+                    <!-- Link zu externer Support-Seite -->
                     <div class="ark support">
                         <br><b>Mehr Hilfe unter:</b><br>
                         <a href="https://support.survivetheark.com/hc/en-us" target="_blank">support.survivetheark.com</a>
@@ -83,16 +99,18 @@
                 </fieldset>
             </section>
         </form>
-        <script src="js/support.js"></script>
+        <script src="js/support.js"></script> <!-- Einbindung eines optionalen JavaScript-Skripts -->
     </main>
+
+    <!-- Footer-Bereich mit zusätzlichen Links -->
     <footer>
         <nav class="navbar-bottom">
             <ul>
-                <li> <a href="footer/impressum.html"> Impressum </a> </li>
-                <li> <a href="footer/datenschutz.html"> Datenschutz </a> </li>
-                <li> <a href="footer/nutzungsbedingungen.html"> Nutzungsbedingungen </a> </li>
-                <li> <a href="footer/kontakt.html"> Kontakt </a> </li>
-                <li> <p>&copy; 2024 Yannick.</p> </li>
+                <li><a href="footer/impressum.html"> Impressum </a></li>
+                <li><a href="footer/datenschutz.html"> Datenschutz </a></li>
+                <li><a href="footer/nutzungsbedingungen.html"> Nutzungsbedingungen </a></li>
+                <li><a href="footer/kontakt.html"> Kontakt </a></li>
+                <li><p>&copy; 2024 Yannick.</p></li>
             </ul>
         </nav>
     </footer>

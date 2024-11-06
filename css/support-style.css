@@ -1,73 +1,84 @@
+/* Hintergrund und Layout der Support-Box */
 .support-box {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
     max-width: 600px;
-    height: auto 0;
-    margin:20px auto 0;
+    height: auto;
+    margin: 20px auto 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Elemente werden vertikal angeordnet */
     justify-content: center;
 }
+
+/* Entfernt den Rahmen von fieldset */
 fieldset {
     border: none;
 }
 
+/* Stil für das Textarea-Feld */
 textarea {
-    resize: vertical;
+    resize: vertical; /* Größe nur vertikal änderbar */
     min-height: 80px;
     margin-top: 5px;
 }
 
+/* Textfarbe für Labels und fettgedruckten Text */
 label, b {
     color: white;
 }
 
+/* Linkfarbe */
 a {
     color: rgb(20, 20, 134);
 }
 
-.format{
+/* Layout für Formularfelder */
+.format {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Abstand zwischen den Elementen */
 }
 
+/* Stil für Eingabefelder und Dropdowns */
 .name input,
 .email input,
 .phone input,
 .kategorie select,
 .message textarea {
-    width: 100%;
-    padding: 8px;
+    width: 100%; /* Volle Breite */
+    padding: 8px; /* Innenabstand */
     border-radius: 5px;
     margin-bottom: 15px;
-    border: none;
+    border: none; /* Kein Rahmen */
 }
 
-.message{
+/* Layout für Nachrichteneingabe */
+.message {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
+/* Hover-Effekt für Eingabefelder */
 .name input:hover,
 .email input:hover,
 .phone input:hover,
 .kategorie select:hover,
-.message textarea:hover{
+.message textarea:hover {
     background-color: rgb(227, 225, 222);
     border: 2px solid darkgray;
 }
 
-/* Buttons */
+/* Layout für die Buttons */
 .submit-buttons {
     display: flex;
-    justify-content: space-between; /* Platziert die Buttons nebeneinander */
+    justify-content: space-between; /* Buttons nebeneinander */
     margin-top: 20px; /* Abstand nach oben */
 }
 
+/* Grundstil für Buttons */
 button {
     background-color: #4CAF50; /* Grüner Hintergrund */
     color: white; /* Weiße Schrift */
@@ -78,22 +89,24 @@ button {
     font-size: 16px; /* Schriftgröße */
 }
 
+/* Hover-Effekt für Buttons */
 button:hover {
     background-color: #45a049; /* Dunklerer Grünton beim Hover */
 }
 
+/* Stil für den Zurücksetzen-Button */
 button[type="reset"] {
-    background-color: #f44336; /* Roter Hintergrund für den Zurücksetzen-Button */
+    background-color: #f44336; /* Roter Hintergrund */
 }
 
+/* Hover-Effekt für Zurücksetzen-Button */
 button[type="reset"]:hover {
     background-color: #e53935; /* Dunklerer Rotton beim Hover */
 }
 
-/* Handy */
+/* Anpassungen für kleinere Bildschirme (unter 630px) */
 @media screen and (max-width: 630px) {
     .format {
-        flex-direction: column;
+        flex-direction: column; /* Elemente untereinander anordnen */
     }
 }
-

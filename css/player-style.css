@@ -1,21 +1,24 @@
+/* Hintergrundstil für den Spielerbereich */
 .player-background {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
-    height: auto 0;
-    margin:20px auto 0;
+    height: auto;
+    margin: 20px auto 0;
     width: 90%;
-    display: flex;
-    align-items: center;
+    display: flex; /* Ermöglicht flexibles Layout */
+    align-items: center; /* Zentriert Inhalt vertikal */
 }
 
+/* Linkfarbe */
 a {
     color: rgb(20, 20, 134);
 }
 
+/* Stil für Bilder auf der linken und rechten Seite */
 .img-left img,
 .img-right img {
     border-radius: 15px;
@@ -23,23 +26,27 @@ a {
     width: 190px;
 }
 
+/* Abstand für das linke Bild */
 .img-left {
     margin-right: 20px;
 }
 
+/* Abstand für das rechte Bild */
 .img-right {
     margin-right: 20px;
 }
 
+/* Stil für den Text neben den Bildern */
 .img-text1, .img-text2 {
     color: white;
     text-decoration: none;
     font-family: Arial, sans-serif;
-    flex: 1;
+    flex: 1; /* Füllt den verbleibenden Platz */
 }
 
+/* Responsive Design für Bildschirme kleiner als 600px */
 @media screen and (max-width: 600px) {
     .player {
-        flex-direction: column;
+        flex-direction: column; /* Anordnung der Inhalte untereinander */
     }
 }

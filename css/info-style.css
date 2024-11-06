@@ -1,20 +1,23 @@
+/* Hintergrundstil für Informationsbereich */
 .info-background {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
     max-width: 1060px;
-    height: auto 0;
-    margin:20px auto 0;
+    height: auto;
+    margin: 20px auto 0;
     width: 90%;
 }
 
-h1, h2, h3, h4, b{
+/* Farbe für Überschriften und fettgedruckten Text */
+h1, h2, h3, h4, b {
     color: white;
 }
 
+/* Stil für Bilder im Server-Info-Bereich */
 .server-info img {
     width: 90%;
     max-width: 800px;

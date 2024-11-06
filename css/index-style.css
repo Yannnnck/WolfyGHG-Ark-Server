@@ -1,24 +1,28 @@
+/* Hintergrund für den Indexbereich */
 .index-background {
     background-color: rgba(78, 79, 85, 0.598);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px;
     min-height: 200px;
     max-width: 1260px;
-    height: auto 0;
-    margin:20px auto 0;
+    height: auto;
+    margin: 20px auto 0;
     width: 90%;
 }
 
-h1, h2, h3, h4, b{
+/* Farbe für Überschriften und fettgedruckten Text */
+h1, h2, h3, h4, b {
     color: white;
 }
 
+/* Linkfarbe */
 a {
     color: rgb(20, 20, 134);
 }
 
+/* Banner-Bildstil */
 .banner img {
     width: 100%;
     max-width: 1250px;
@@ -26,6 +30,7 @@ a {
     border: 2px solid rgba(72, 70, 86, 0.8);
 }
 
+/* Stil für Text und GIF in einer Zeile */
 .gif-text {
     padding: 0;
     border: none;
@@ -33,27 +38,31 @@ a {
     align-items: center; /* Zentriert das GIF vertikal zum Text */
 }
 
+/* Stil für das GIF-Bild */
 .gif img {
     width: 100%;
-    max-width: 300px; /* Breite des GIF anpassen */
-    height: auto; /* Höhe proportional zur Breite */
+    max-width: 300px; /* Maximale Breite des GIF */
+    height: auto; /* Höhe bleibt proportional zur Breite */
     object-fit: cover; /* Optional: Zuschneiden des GIFs */
     border-radius: 20px;
     border: 2px solid rgba(72, 70, 86, 0.8);
 }
 
+/* Ausrichtung des GIFs nach rechts */
 .gif {
-    margin-left: auto; /* Schiebt das GIF nach rechts */
+    margin-left: auto;
 }
 
+/* Hover-Effekt für das GIF */
 .gif img:hover {
     scale: 1.1;
 }
 
+/* Responsive Design für Bildschirme kleiner als 930px */
 @media screen and (max-width: 930px) {
     .gif-text {
         flex-direction: column;
-        align-items: flex-start; /* Richtet den Inhalt links aus */
+        align-items: flex-start; /* Inhalt links ausrichten */
     }
 
     .gif {
@@ -61,5 +70,3 @@ a {
         margin-left: 0;
     }
 }
-
-

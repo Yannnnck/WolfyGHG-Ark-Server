@@ -1,42 +1,44 @@
+/* Hintergrundbild und grundlegendes Layout für die gesamte Seite */
 body {
-    background: url('../img/background.jpg'); /* Pfad zu deinem Bild */
-    background-size: cover; /* Bild skaliert sich, um den ganzen Bereich auszufüllen */
+    background: url('../img/background.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Bild füllt den gesamten Bereich */
     background-position: center; /* Bild wird zentriert */
-    background-repeat: no-repeat; /* Verhindert, dass das Bild wiederholt wird */
-    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
-    margin: 0; /* Entfernt Standardabstand für den body */
-    font-family: "Inconsolata", sans-serif; /* Beispiel-Schriftart für die gesamte Seite */
+    background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+    margin: 0; /* Entfernt Standardabstand */
+    font-family: "Inconsolata", sans-serif; /* Schriftart für die gesamte Seite */
 
-    /* Body auf volle Höhe setzen und Flexbox verwenden */
+    /* Setzt die Höhe auf 100vh und Flexbox für Layout */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
-h1, h2, h3, h4{
+/* Unterstrich für Überschriften */
+h1, h2, h3, h4 {
     border-bottom: 2px solid #b5b5b5;
     display: inline-block;
 }
 
-/* Hauptinhalt dehnt sich aus, um den freien Platz zu füllen */
+/* Hauptinhalt füllt den verfügbaren Platz */
 header, main {
     flex: 1;
 }
 
 /* Footer bleibt am unteren Rand */
 footer {
-    margin:20px;
+    margin: 20px;
     align-self: stretch; /* Passt die Breite des Footers an */
 }
 
+/* Stil für die Navbar oben und unten */
 .navbar,
 .navbar-bottom {
     background-color: rgba(78, 79, 85, 0.79);
-    border: 2px solid rgb(108, 108, 108, 0.8);
+    border: 2px solid rgba(108, 108, 108, 0.8);
     overflow: hidden;
     display: flex;
-    margin:10px auto 0;
+    margin: 10px auto 0;
     width: 96%;
     justify-content: center;
     border-radius: 5px;
@@ -44,8 +46,9 @@ footer {
     padding: 10px;
 }
 
+/* Logo-Stil */
 .logo {
-margin-right: auto;
+    margin-right: auto;
 }
 
 .logo img {
@@ -55,6 +58,11 @@ margin-right: auto;
     padding: 0px;
 }
 
+li p {
+    color: white;
+}
+
+/* Stil für die Navigationsleisten */
 .navbar ul,
 .navbar-bottom ul {
     list-style-type: none;
@@ -69,6 +77,7 @@ margin-right: auto;
     margin: 0 30px;
 }
 
+/* Links in der Navbar */
 .navbar a,
 .navbar-bottom a {
     color: white;
@@ -76,6 +85,7 @@ margin-right: auto;
     padding: 8px 16px;
 }
 
+/* Hover-Effekt für die Links */
 .navbar a:hover,
 .navbar-bottom a:hover {
     background-color: #ffffff;
@@ -83,6 +93,7 @@ margin-right: auto;
     color: black;
 }
 
+/* Responsive Design für Bildschirme kleiner als 400px */
 @media screen and (max-width: 400px) {
     .navbar,
     .navbar-bottom {
@@ -92,16 +103,17 @@ margin-right: auto;
 
     .navbar ul,
     .navbar-bottom ul {
-        flex-direction: column; /* Auch die Liste vertikal anordnen */
-        width: 100%; /* Breite anpassen, damit sie den ganzen Bildschirm nutzt */
+        flex-direction: column; /* Liste vertikal anordnen */
+        width: 100%; /* Volle Breite nutzen */
     }
 
     .navbar li,
     .navbar-bottom li {
-        margin: 10px 0; /* Vertikalen Abstand zwischen den Listenelementen hinzufügen */
+        margin: 10px 0; /* Abstand zwischen den Listenelementen */
     }
 }
 
+/* Responsive Design für Bildschirme zwischen 401px und 760px */
 @media screen and (min-width: 401px) and (max-width: 760px) {
     .navbar {
         flex-wrap: wrap; /* Elemente umbrechen, wenn sie nicht in eine Zeile passen */
@@ -110,31 +122,32 @@ margin-right: auto;
 
     .navbar ul {
         display: flex;
-        flex-wrap: wrap; /* Zeilenumbruch für die Listenelemente */
+        flex-wrap: wrap; /* Zeilenumbruch für Listenelemente */
         justify-content: center;
         width: 80%; /* Volle Breite für bessere Platzierung */
     }
 
     .navbar li {
-        flex: 1 1 45%; /* Passt die Breite der Listenelemente an, damit zwei in eine Reihe passen */
+        flex: 1 1 45%; /* Breite anpassen, damit zwei Elemente in eine Reihe passen */
         margin: 5px 0; /* Abstand zwischen den Elementen */
     }
 }
 
+/* Responsive Design für navbar-bottom zwischen 401px und 890px */
 @media screen and (min-width: 401px) and (max-width: 890px) {
     .navbar-bottom {
-        flex-wrap: wrap; /* Elemente umbrechen, wenn sie nicht in eine Zeile passen */
-        justify-content: space-between; /* Abstand zwischen den Elementen */
+        flex-wrap: wrap; /* Elemente umbrechen */
+        justify-content: space-between;
     }
 
-    .navbar-bottom ul{
+    .navbar-bottom ul {
         display: flex;
-        flex-wrap: wrap; /* Zeilenumbruch für die Listenelemente */
-        width: 100%; /* Volle Breite für bessere Platzierung */
+        flex-wrap: wrap; /* Zeilenumbruch für Listenelemente */
+        width: 100%; /* Volle Breite */
     }
 
     .navbar-bottom li {
-        flex: 1 1 45%; /* Passt die Breite der Listenelemente an, damit zwei in eine Reihe passen */
-        margin: 5px 0; /* Abstand zwischen den Elementen */
+        flex: 1 1 45%; /* Zwei Elemente pro Zeile */
+        margin: 5px 0;
     }
 }
