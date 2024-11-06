@@ -89,6 +89,13 @@ button {
     font-size: 16px; /* Schriftgröße */
 }
 
+#success-message {
+    color: green;
+    display: none;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
 /* Hover-Effekt für Buttons */
 button:hover {
     background-color: #45a049; /* Dunklerer Grünton beim Hover */

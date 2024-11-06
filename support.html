@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/support-style.css">
 </head>
 <body>
+    <!-- Loader-Element -->
+    <div class="loader"></div>
+
+    <!-- Einbindung des JavaScript-Skripts zum Steuern des Loaders -->
+    <script src="js/loader.js"></script>
+    
     <!-- Header-Bereich mit Navigation -->
     <header>
         <nav class="navbar">
@@ -90,10 +96,14 @@
                         <button type="submit">Absenden</button>
                         <button type="reset">Zurücksetzen</button>
                     </div>
+                    <div> <br>
+                        <p id="success-message" style="color: green; display: none;">Danke für die Rückmeldung!</p>
+                    </div>
+                    
 
                     <!-- Link zu externer Support-Seite -->
                     <div class="ark support">
-                        <br><b>Mehr Hilfe unter:</b><br>
+                        <br> <b>Mehr Hilfe unter:</b><br>
                         <a href="https://support.survivetheark.com/hc/en-us" target="_blank">support.survivetheark.com</a>
                     </div>
                 </fieldset>
