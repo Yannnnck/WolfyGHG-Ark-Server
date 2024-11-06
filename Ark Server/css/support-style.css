@@ -21,7 +21,7 @@ textarea {
     margin-top: 5px;
 }
 
-b {
+label, b {
     color: white;
 }
 
