@@ -34,6 +34,10 @@ img:hover {
     scale: 1.1;
 }
 
+.logo img:hover {
+    scale: 1.0;
+}
+
 /* Layout für Location-Klasse */
 .Location {
     display: grid;
